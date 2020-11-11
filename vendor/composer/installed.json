@@ -1,0 +1,59 @@
+[
+    {
+        "name": "tivnet/currency-flags",
+        "version": "1.9.0",
+        "version_normalized": "1.9.0.0",
+        "dist": {
+            "type": "file",
+            "url": "https://raw.githubusercontent.com/tivnet/currency-flags/master/dist/currency-flags.min.css"
+        },
+        "type": "library",
+        "installation-source": "dist"
+    },
+    {
+        "name": "tivnet/tivwp",
+        "version": "1.4.0",
+        "version_normalized": "1.4.0.0",
+        "source": {
+            "type": "git",
+            "url": "git@github.com:tivnet/tivwp.git",
+            "reference": "ab9f42fdc12bd269e13cb860f26425db199b8398"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/tivnet/tivwp/zipball/ab9f42fdc12bd269e13cb860f26425db199b8398",
+            "reference": "ab9f42fdc12bd269e13cb860f26425db199b8398",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.6"
+        },
+        "time": "2020-10-24T14:33:58+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "TIVWP_140\\": "src"
+            }
+        },
+        "license": [
+            "GPL-3.0-or-later"
+        ],
+        "authors": [
+            {
+                "name": "Gregory Karpinsky",
+                "homepage": "https://www.tiv.net/"
+            }
+        ],
+        "description": "TIV.NET WordPress Framework",
+        "homepage": "https://tiv.net/",
+        "keywords": [
+            "WordPress",
+            "framework"
+        ],
+        "support": {
+            "source": "https://github.com/tivnet/tivwp/tree/1.4.0",
+            "issues": "https://github.com/tivnet/tivwp/issues"
+        }
+    }
+]

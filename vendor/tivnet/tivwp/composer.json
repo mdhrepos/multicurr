@@ -1,0 +1,36 @@
+{
+  "name": "tivnet/tivwp",
+  "description": "TIV.NET WordPress Framework",
+  "license": "GPL-3.0-or-later",
+  "type": "library",
+  "keywords": [
+    "WordPress",
+    "framework"
+  ],
+  "homepage": "https://tiv.net/",
+  "authors": [
+    {
+      "name": "Gregory Karpinsky",
+      "homepage": "https://www.tiv.net/"
+    }
+  ],
+  "minimum-stability": "dev",
+  "config": {
+    "secure-http": true,
+    "preferred-install": {
+      "*": "dist"
+    },
+    "github-protocols": [
+      "https"
+    ],
+    "notify-on-install": true
+  },
+  "require": {
+    "php": ">=5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "TIVWP_140\\": "src"
+    }
+  }
+}

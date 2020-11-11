@@ -1,0 +1,308 @@
+*** WooCommerce Multi-currency ***
+
+2020-11-03 - version 2.7.2
+* Tweak: Allow entering custom pricing for Product Bundles.
+
+2020-11-01 - version 2.7.1
+* Tweak: WP Rocket cache tuning.
+
+2020-10-29 - version 2.7.0
+* WC tested up to: 4.6.1
+* Added: Save currency in the User's profile. Retrieve upon login (only if shopping cart is empty).
+* Fix: Switching currency was removing non-latin characters from the URL.
+* Fix: (APFS) Convert only fixed prices, not calculated as percents ("inherited").
+
+2020-10-12 - version 2.6.7
+* Fix: (APFS) Correct discounts calculation when Dynamic Pricing is applied to APFS products.
+* Fix: (Subscriptions) When a subscription is renewed manually, set active currency to the one of the original order.
+
+2020-09-16 - version 2.6.6
+* Fix: Flat rate shipping fee changes when saving Zone settings (under certain conditions).
+
+2020-09-15 - version 2.6.5
+* Fix: Do not run shipping costs conversion in admin area.
+* WC tested up to: 4.5.2
+
+2020-09-14 - version 2.6.4
+* Fix: Correctly convert shipping fee when costs have commas and min/max_fee.
+
+2020-08-08 - version 2.6.3
+* Fix: Prevent page reloading if geolocation is not enabled.
+* Fix: Gracefully handle browsers with cookies disabled.
+* Fix: Display correct custom prices when product prices are set to show with tax included.
+* Tweak: Allow entering custom prices in local numeric format (decimal commas in EU, for instance).
+* Tweak: Client-side cookie setting is disabled by default because it breaks some page-caching plugins.
+* WC tested up to: 4.3.1
+
+2020-07-14 - version 2.6.2
+* Fix: do not convert prices when exporting products.
+
+2020-07-14 - version 2.6.1
+* Fix: Allow entering more decimals in the FixedRates admin section.
+* Fix: (Multilingual) Page reloading if currency not selected with the widget.
+* Tweak: (Multilingual) Force the currency change when language is switched.
+* Tweak: Cache the currency detection to improve performance.
+
+2020-06-27 - version 2.6.0
+* Fix: Cookie handling refactored.
+* Fix: Ignore stored language-to-currency settings if multilingual plugin is not active.
+* Fix: Country-to-currency list updated.
+* Fix: Set HUF and TWD as currencies w/o decimals (required by PayPal gateway).
+* Fix: Shipping rates were converted in admin area pages in some situations.
+* Added: (Internal) methods to temporarily disable currency conversion. Needed for the FedEx shipping extension.
+
+2020-05-09 - version 2.5.4
+* Fix: (FedEx Shipping > 3.4.29) Correct conversion of rates returned by FedEx API.
+* Fix: (Accessibility) Added "aria-label" to the Currency Selector.
+* Fix: (Gravity Forms) Set Gravity currency format to match WooCommerce settings.
+* Fix: (Polylang) Fatal error when deactivating.
+
+2020-04-28 - version 2.5.3
+* Fix: On the 'order-pay' page, force the currency of order.
+* Fix: (Name Your Price) Amounts were losing precision during conversion is some cases.
+* Fix: (Name Your Price) Allow switching currency with NYP items in the cart.
+
+2020-04-21 - version 2.5.2
+* Fix: (Gravity Forms) Filter the "choice" value before adding to the totals (props Gravity Wiz).
+* Fix: Set a higher z-index for currency dropdown with flags.
+* Fix: Styles of currency selector with flags close match regular SELECT tags.
+* Fix: Do not check for countries allowed to sell to when detecting the user's currency.
+* Fix: Put the CSS links to the top part of the HEAD so the styles can be overwritten by theme.
+* Fix: (WooCommerce Admin) Currency formatting w/o code; Table column with currency.
+
+2020-04-11 - version 2.5.1
+* Fix: Load the currency selector widget assets only on pages where the widget is shown.
+
+2020-04-08 - version 2.5.0
+* Added: (WooCommerce Admin) Interface to filter Analytics reports by currency.
+
+2020-03-27 - version 2.4.1
+* Fix: (Gravity Forms) Incorrect "Total" display in the Cart when price rounding is applied.
+* Fix: Do not load jQuery-UI theme and use own CSS instead.
+
+2020-03-19 - version 2.4.0
+* Added: Custom product pricing for extra currencies - for Variable products.
+* Added: Integration with the `WooCommerce MSRP Pricing` extension.
+
+2020-03-07 - version 2.3.0
+* Added: Filter to adjust the calculated value, `woocommerce_multicurrency_calculate`.
+* Fix: (Subscriptions) Corrected price calculation when used with `NameYourPrice`.
+* Fix: (Bookings) Corrected price calculation with Persons.
+* Fix: (Internal, Unit tests) `Decimals::get_price_decimals()` returns default (2) if called before class initialization.
+
+2020-02-22 - version 2.2.0
+* WC tested up to: 4.0.0
+* Fix: (Dynamic Pricing) Use the custom product pricing per currency as the price-to-discount.
+* Added: Custom product pricing for extra currencies - for Simple Subscriptions.
+* Added: Decimal and thousand price separators for CHF.
+
+2020-02-15 - version 2.1.0
+* Fix: Make sure COOKIEPATH is not empty (found in some installations).
+* Fix: Correct 'Money spent' column value in the 'Customer list' report filtered by a currency.
+* Added: Decimal and thousand price separators depend on the combination of country, language and currency. Partially implemented.
+* Added: Enable the "Link language to currency" option when either WPGlobus or Polylang is active.
+* Tweak: Treat currency obtained from geolocation the same way as if it is selected with the widget.
+
+2020-02-02 - version 2.0.0
+* Backward-incompatible: namespace \WOOMC\MultiCurrency renamed to \WOOMC - update your code if you use the WOOMC\API class.
+* Backward-incompatible: the `woocommerce_multicurrency_user` cookie is no longer used.
+* WC tested up to: 3.9
+* Fix: Prevent Type Error in Currency Selector when `jQuery-UI` is not loaded for any reason.
+* Fix: Show custom pricing only for the supported product types (currently only Simple products).
+* Fix: (Bookings) Tested with version 1.15.5. Avoid double conversion in `WC_Product_Booking::get_price_html`.
+* Fix: (Subscriptions) Tested with version 3.x. Correct conversion when renewed from `My Account`.
+* Fix: Currency selector widget to work on non-SSL websites.
+* Fix: Correctly initialize number of decimals.
+* Added: Integration with the 'WooCommerce Gravity Forms Product Add-Ons' extension.
+* Tweak: Do not show confusing compatibility notices in admin area.
+* Internal: General code refactoring, sanitizing, and cleanup.
+
+2019-12-13 - version 1.20.2
+* Fix: Allow 3rd-party plugin URL filtering. Fixes problem with Polylang's domain mapping.
+* Fix: Prevent infinite loop when changing currency with themes that do not use the `body_class()` method.
+
+2019-12-09 - version 1.20.1
+* Fix: Custom pricing per currency.
+* Tweak: Force "hard" refresh to ignore page caching when changing currency.
+
+2019-11-20 - version 1.20.0
+* Added: Option to schedule currency rates update hourly, twice daily or daily.
+* Tweak: Use scheduler for currency rates updates instead of relying on transients.
+* Tweak: Additional logging option, "Debug with tracing".
+* Internal: General code cleanup.
+
+2019-11-13 - version 1.19.1
+* Tweak: Custom product pricing for extra currencies can be disallowed in Settings.
+
+2019-11-12 - version 1.19.0
+* WC tested up to: 3.8.0
+* Added: Custom product pricing for extra currencies - for Simple products.
+* Added: Integration with the `WooCommerce Payment Gateway Based Fees` extension.
+* Added: Integration with "Customer Specific Pricing For WooCommerce" extension by WisdmLabs.
+* Fix: Currency-selector with flags - Load jQuery-UI styles if not loaded by somebody else yet.
+* Fix: Removed incorrect error message in Admin/Compatibility warnings code.
+* Tweak: Log exchange rates API response body if error and if debug.
+* Tweak: Removed the "Currency selector drop-down" title from the widget.
+* Tweak: Log Exception trace.
+
+2019-10-06 - version 1.18.2
+* Fix: a typo caused currency selector widget ignoring format specification.
+
+2019-09-26 - version 1.18.1
+* Fix: When switching currencies, do not set decimals higher than the value set in the General Settings.
+
+2019-09-20 - version 1.18.0
+* Added: Enable Stripe gateways (Giropay, iDEAL, etc.) and PayPal Standard to work with any base store currency.
+* Fix: (Bookings and Product Add-ons) Code adapted to the changes in Bookings 1.15.2.
+* Fix: (UPS Shipping) Convert rates to the store currency when UPS returns them in a different currency.
+* Fix: Pass the correct number of decimals to extensions that do not use the standard Woo method.
+* WIP: Integration with the 'WooCommerce Measurement Price Calculator' extension.
+
+2019-08-23 - version 1.17.2
+* Fix: (Bookings) Convert `display_cost`.
+* Fix: JS error in the currency selector widget when its script is loaded early.
+
+2019-08-17 - version 1.17.1
+* Added: (Bookings) Support versions 1.15.x.
+* Fix: (Bookings) Displaying prices in Cart when 'Dynamic Pricing' extension is active.
+
+2019-07-30 - version 1.17.0
+* WC tested up to: 3.7.0
+* Fix: (Checkout Add-Ons) Deprecated hook workaround.
+* Fix: Do not return "0.0" when a non-numeric value is passed to the converter; instead, return the value as-is.
+* Fix: Preserve variable type when converting shipping costs.
+* Fix: Do not attempt to convert non-scalars and not `is_numeric`, except for specific cases.
+* Fix: (UPS Shipping) Skip the check against the store currency.
+* Added: Option to show flags in the currency selector widget.
+* Added: Public currency conversion methods.
+* Internal: Optimize composer autoload.
+
+2019-06-21 - version 1.16.0
+* WC tested up to: 3.6.4
+* Added: Integration with WooCommerce Mix and Match (by Kathy Darling).
+* Added: Display admin notices about incompatible plugins.
+* Added: Conversion rate is recorded in the Order meta.
+* Added: Orders report in the Store Currency.
+* Added: (Product Vendors) Order meta in the email sent to Vendors.
+* Added: Shortcode to convert static values on pages.
+* Fix: (Product Vendors) Do not show the misleading currency selector on the "vendors" tab in the Reports.
+* Fix: WooCommerce Deposits incompatibility full stop replaced with a dismissible warning.
+* Fix: Do not encode the current URL when switching currencies (avoid `&amp.`).
+
+2019-04-27 - version 1.15.0
+* WC tested up to: 3.6.2
+* Added: the "Fixed Rates" provider to set the currency rates manually.
+* Added: support for the combination of Booking and Product Add-ons extensions.
+* Added: HTML body class `woocommerce-multicurrency-{currency-code}` for use in CSS rules.
+* Added: Button to reset all Multi-currency settings on the WooCommerce-Status-Tools page.
+* Fix: (Bookings) correctly process booking add-ons with international (accented) characters in the option label.
+* Fix: (Product Add-ons) do not convert the display price of the percentage-based add-ons.
+* Fix: (Subscriptions) show correct prices when a subscription is switched.
+* Fix: (Table Rate Shipping 3.0.15) handle rates by shipping class.
+* Fix: the default store currency must always present in the Multi-currency list.
+* Fix: (WC UX Guidelines) removed the "settings" icon from the plugin list.
+* Fix: (WC UX Guidelines) changed the "author" to TIV.NET in the plugin header.
+* Fix: do not display the plugin activation banner if requirements not met.
+* Tweak: disable autocomplete and LastPass on the rates provider settings in admin.
+* Internal: optional logging using the standard WooCommerce log facility.
+* Internal: display admin notice if there was an error retrieving currency rates.
+* Incompatibility: WooCommerce Deposits (full stop if detected).
+
+2019-03-06 - version 1.14.0
+* WC tested up to: 3.5.5
+* Fix: (Product Vendors) Fatal error when a vendor product has shipping fees.
+* Added: integration with the 'Dynamic Pricing Table' extension.
+* Added: integration with the 'Checkout Add-Ons' extension, Version 2.
+
+2019-01-09 - version 1.13.0
+* Tested with WordPress 5.x
+* WC tested up to: 3.5.3
+* Added: Multi-currency info in the WooCommerce Status Report (for technical support).
+* Added: 'Checkout Add-Ons' integration.
+* Added: 'Accommodation Booking' integration.
+* Fix: (Product Vendors) correct commission calculation if price adjustments are set.
+* Fix: (Bookings) correctly convert costs per person.
+* Fix: (Bookings) recalculate prices in the Cart when the currency changed.
+* Fix: (Product Add-ons) refactored to work correctly on WP Engine servers.
+
+2018-11-30 - version 1.12.0
+* WC tested up to: 3.5.2
+* Fix: User geolocation was attempted too early, before WC populated the list of countries.
+* Added: Initial integration with the 'Product Vendors' extension: calculate commission in the store base currency.
+
+2018-11-24 - version 1.11.0
+* Added: integration with the 'Name Your Price' extension.
+
+2018-11-03 - version 1.10.1
+* WC tested up to: 3.5.1
+* Fix: Canada Post rates converted correctly regardless the base Store currency.
+
+2018-10-30 - version 1.10.0
+* WC tested up to: 3.5.0
+* Added: integration with the 'Dynamic Pricing' extension.
+* Tweak: do not apply rounding formula on the default `round=0.01`.
+* Internal: verify minimum required WooCommerce version without querying `get_plugins`
+
+2018-10-15 - version 1.9.0
+* WC tested up to: 3.4.6
+* Fix: recalculate mini-cart and cart icon totals on currency change.
+* Fix: fatal error on PHP < 5.6 (expression in `const`).
+* Fix: correct conversion of Flat Rate shipping settings with shortcodes.
+* Fix: avoid multiple addition to the cart when switching currency.
+* Fix: convert subscription setup fee.
+* Added: integration with the 'WooCommerce Royal Mail' extension.
+* Added: integration with the 'WooCommerce Canada Post Shipping' extension.
+* Added: integration with the 'WooCommerce Australia Post Shipping' extension.
+* Added: integration with the 'WooCommerce FedEx Shipping' extension.
+* Added: integration with the 'WooCommerce UPS Shipping' extension.
+* Added: integration with the 'WooCommerce PostNL' extension.
+* Added: API for 3rd parties to add currency rates providers.
+* Added: query parameter to force currency (integration with the Google Product Feed extension).
+* Internal: added method of getting the active currency via the `woocommerce_multicurrency_active_currency` filter.
+* Internal: added "before" and "after" loading hooks.
+
+2018-08-17 - version 1.8.0
+* Added: support for the 'WooCommerce USPS Shipping' extension.
+* Added: support for 'WP Super Cache' plugin version 1.6.3+.
+* Added: metabox to change the currency of orders and subscriptions (does not change the amounts!).
+* Fix: convert the fixed-amount coupons data to the actual currency.
+
+2018-08-01 - version 1.7.0
+* WC tested up to: 3.4.4
+* Added: filtering WooCommerce Reports and Dashboard Widget (total sales) by currency.
+
+2018-07-24 - version 1.6.0
+* Fix: various cases of incorrect shipping fee conversions.
+* Added: support for 'Product Add-ons' extension.
+* Added: support for 'WP Super Cache' plugin.
+
+2018-07-18 - version 1.5.0
+* Added: set the price decimals corresponding to the selected currency. For example JPY is shown without "cents".
+
+2018-07-12 - version 1.4.0
+* Added: initial selection of the currency by the visitor's location.
+* Added: "WooCommerce Subscribe All The Things" (WCS_ATT) extension support.
+* Tweak: in multilingual mode, allow some of all languages not to be linked to a currency.
+
+2018-07-07 - version 1.3.0
+* Added: support for 'Variable Subscriptions' and 'Bookings' product types.
+* Internal: added Migration module to handle potential database changes in the future versions.
+
+2018-06-22 - version 1.2.1
+* Tweak: better Price Conversion Setting example.
+
+2018-06-20 - version 1.2.0
+* First public release.
+* WC tested up to: 3.4.3
+
+2018-05-04 - version 1.1.2
+* WC tested up to: 3.4.0
+* Fix: `wp_enqueue_script` was called too early.
+* Tweak: link to documentation in the Settings Panel.
+* Tweak: Widget title changed to 'Currency Selector' (removed 'WooCommerce').
+
+2018-04-04 - version 1.1.1
+* Various UX improvements and code cleanup.
+
+2018-03-25 - version 1.0.0
+* The first stable version.

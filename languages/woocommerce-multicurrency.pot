@@ -1,0 +1,463 @@
+# Copyright (C) 2020 WooCommerce Multi-currency 2.7.2
+# This file is distributed under the same license as the WooCommerce Multi-currency 2.7.2 package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WooCommerce Multi-currency 2.7.2\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Last-Translator: TIV.NET INC.\n"
+"Report-Msgid-Bugs-To: support@tiv.net\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: src/WOOMC/Admin/Compatibility.php:98, src/WOOMC/Admin/Notices.php:38, src/WOOMC/Admin/Notices.php:65, src/WOOMC/Settings/Fields.php:140, src/WOOMC/User/Profile.php:157, woocommerce-multicurrency.php:3, wp-super-cache/plugins/woocommerce-multicurrency.php:36
+msgid "WooCommerce Multi-currency"
+msgstr ""
+
+#. translators: %1$s - WooCommerce Multi-currency, %2$s - the incompatible plugin name
+#: src/WOOMC/Admin/Compatibility.php:101
+msgid "%1$s is incompatible with %2$s."
+msgstr ""
+
+#: src/WOOMC/Admin/CustomPrice/Simple.php:92, src/WOOMC/Admin/CustomPrice/Variable.php:91, src/WOOMC/Admin/Menu.php:63, src/WOOMC/Order/ReportPage.php:85
+msgid "Multi-currency"
+msgstr ""
+
+#: src/WOOMC/Admin/CustomPrice/Simple.php:93, src/WOOMC/Admin/CustomPrice/Variable.php:92
+msgid "To override the automatic price conversion for this product, put the fixed price values in the fields below."
+msgstr ""
+
+#: src/WOOMC/Admin/EditCurrency.php:85
+msgid "Multi-currency options"
+msgstr ""
+
+#: src/WOOMC/Admin/EditCurrency.php:144
+msgid "Note: this will only change the currency, not the amounts!"
+msgstr ""
+
+#. translators: %1$s - WooCommerce Multi-currency, %2$s - link to woocommerce.com
+#: src/WOOMC/Admin/Notices.php:37
+msgid "%1$s requires %2$s version 3+ to be installed and active."
+msgstr ""
+
+#. translators: %s - WooCommerce Multi-currency.
+#: src/WOOMC/Admin/Notices.php:64
+msgid "The %s extension is active. Please configure its settings."
+msgstr ""
+
+#: src/WOOMC/Admin/Notices.php:74
+msgid "Documentation"
+msgstr ""
+
+#: src/WOOMC/Admin/Tools.php:39
+msgid "Reset Multi-currency settings"
+msgstr ""
+
+#: src/WOOMC/Admin/Tools.php:40
+msgid "Reset"
+msgstr ""
+
+#: src/WOOMC/Admin/Tools.php:44
+msgid "This tool will reset all Multi-currency settings to default. This action cannot be reversed."
+msgstr ""
+
+#: src/WOOMC/Admin/Tools.php:53
+msgid "Export Multi-currency settings"
+msgstr ""
+
+#: src/WOOMC/Admin/Tools.php:54
+msgid "Export"
+msgstr ""
+
+#: src/WOOMC/Admin/Tools.php:55
+msgid "This tool will export all Multi-currency settings to a file."
+msgstr ""
+
+#: src/WOOMC/Admin/Tools.php:59
+msgid "Import Multi-currency settings"
+msgstr ""
+
+#: src/WOOMC/Admin/Tools.php:60
+msgid "Import"
+msgstr ""
+
+#: src/WOOMC/Admin/Tools.php:64
+msgid "This tool will import all Multi-currency settings from the previously exported file. This action cannot be reversed."
+msgstr ""
+
+#. translators: %d - number of records
+#: src/WOOMC/Admin/Tools.php:100
+msgid "Multi-currency settings have been reset. Number of records deleted: %d."
+msgstr ""
+
+#: src/WOOMC/Admin/Tools.php:97
+msgid "There was an error resetting Multi-currency (or it was already reset)."
+msgstr ""
+
+#: src/WOOMC/Admin/Tools.php:147
+msgid "There was an error exporting Multi-currency settings (or they were reset)."
+msgstr ""
+
+#: src/WOOMC/Admin/Tools.php:144
+msgid "Settings exported to"
+msgstr ""
+
+#: src/WOOMC/Admin/Tools.php:207
+msgid "There was an error importing Multi-currency settings."
+msgstr ""
+
+#: src/WOOMC/Admin/Tools.php:205
+msgid "Settings imported"
+msgstr ""
+
+#: src/WOOMC/Currency/Selector/ShortcodeView.php:27, src/WOOMC/Currency/Selector/Widget.php:42
+msgctxt "Widget"
+msgid "Currency"
+msgstr ""
+
+#: src/WOOMC/Currency/Selector/Widget.php:23
+msgctxt "Widget"
+msgid "Drop-down currency selector."
+msgstr ""
+
+#: src/WOOMC/Currency/Selector/Widget.php:29
+msgctxt "Widget"
+msgid "Currency Selector"
+msgstr ""
+
+#: src/WOOMC/Currency/Selector/Widget.php:101
+msgctxt "Widget"
+msgid "Display format:"
+msgstr ""
+
+#: src/WOOMC/Currency/Selector/Widget.php:115
+msgctxt "Widget"
+msgid "Example:"
+msgstr ""
+
+#: src/WOOMC/Currency/Selector/Widget.php:121
+msgctxt "Widget"
+msgid "Show flag"
+msgstr ""
+
+#: src/WOOMC/Integration/Cache/WPRocket.php:128
+msgid "WP Rocket"
+msgstr ""
+
+#: src/WOOMC/Integration/Cache/WPRocket.php:130
+msgid "Note: saving changes clears the WP Rocket file cache."
+msgstr ""
+
+#. translators: %1$s - the currency symbol, %2$s - the currency name
+#: src/WOOMC/Integration/WCProductVendors.php:200
+msgid "The commission is calculated in: %1$s (%2$s)."
+msgstr ""
+
+#. translators: %1$s - the currency symbol, %2$s - the currency name
+#: src/WOOMC/Integration/WCProductVendors.php:206
+msgid "The order was paid in %1$s (%2$s)."
+msgstr ""
+
+#. translators: %f - the currency exchange rate
+#: src/WOOMC/Integration/WCProductVendors.php:217
+msgid "The currency exchange rate was: %f."
+msgstr ""
+
+#: src/WOOMC/Order/ReportTable.php:161
+msgid "This page totals:"
+msgstr ""
+
+#: src/WOOMC/Order/ReportTable.php:270
+msgid "Store Currency"
+msgstr ""
+
+#: src/WOOMC/Order/ReportTable.php:271, src/WOOMC/Settings/Fields.php:716
+msgid "Rate"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:145
+msgid "Thank you for installing the multi-currency extension! We appreciate your business!"
+msgstr ""
+
+#. translators: placeholders for HTML "a" tag linking 'here' to the Support page.
+#: src/WOOMC/Settings/Fields.php:147
+msgid "Please configure the settings using the instructions below. Should you need help, please contact our technical support by clicking %1$shere%2$s."
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:193
+msgid "Allow custom product pricing for extra currencies"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:194
+msgid "If checked, you can enter product prices for each currency."
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:194
+msgid "(Simple and variable products only)"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:201
+msgid "Client-side cookies only"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:202
+msgid "Do not enable this unless asked by Support. Does not work with some page caching plugins!"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:213
+msgid "View logs"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:218
+msgid "Log level"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:225
+msgid "What to write to the log file."
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:227
+msgid "Nothing"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:228
+msgid "Error conditions"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:229
+msgid "Informational messages"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:230
+msgid "Debug-level messages"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:231
+msgid "Debug with tracing"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:248
+msgid "Currency Exchange Rates"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:252
+msgid "To switch between currencies, your website needs to get the exchange rates from one of the service providers."
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:253
+msgid "Alternatively, you can select the FixedRates option and enter the rates manually."
+msgstr ""
+
+#. translators: %1$, %2$ are HTML tags linking "here" to documentation.
+#: src/WOOMC/Settings/Fields.php:256
+msgid "Please read the instructions %1$shere%2$s."
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:291
+msgid "Service Provider"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:292
+msgid "Please choose one."
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:345
+msgid "Rates update schedule"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:346
+msgid "Not applicable to FixedRates"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:409
+msgid "Currency exchange rates were not retrieved. Additional information may be available in the log."
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:432
+msgid "Enabled currencies"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:436
+msgid "Please specify all currencies you plan to use."
+msgstr ""
+
+#. translators: %s - "Save changes"
+#: src/WOOMC/Settings/Fields.php:438
+msgid "Then please click the [%s] button at the bottom to continue."
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:469
+msgid "Currencies"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:475
+msgid "Select all currencies that will be available on your website."
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:479
+msgid "Select currencies"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:498, src/WOOMC/Settings/Fields.php:806
+msgid "Link currency to language"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:502
+msgid "If you would like to set the currency <strong>automatically</strong> when the language is switched, please set the \"Language - Currency\" pairs below."
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:504
+msgid "Note: our Currency Selector Widget can be used for the <strong>manual</strong> currency switching, independently of the language. In that case, the below settings will be ignored."
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:535
+msgid "Not linked"
+msgstr ""
+
+#. translators: placeholder for the language name.
+#: src/WOOMC/Settings/Fields.php:545
+msgid "Currency to use when the language is switched to %s."
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:569
+msgid "Price formats"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:573
+msgid "Here you can change the way the prices are displayed, separately for each currency."
+msgstr ""
+
+#. translators: placeholder for the WooCommerce price format.
+#: src/WOOMC/Settings/Fields.php:575
+msgid "The default format is <code>%s</code>"
+msgstr ""
+
+#. translators: placeholders will be displayed as-is.
+#: src/WOOMC/Settings/Fields.php:577
+msgid "The <code>%1$s</code> is the placeholder for the currency symbol. <code>%2$s</code> - for the amount."
+msgstr ""
+
+#. translators: placeholders will be displayed as-is.
+#: src/WOOMC/Settings/Fields.php:579
+msgid "For example, if you want the currency symbol to go after the amount, you can use the <code>%2$s%1$s</code> format."
+msgstr ""
+
+#. translators: placeholder for the currency symbol.
+#: src/WOOMC/Settings/Fields.php:595
+msgid "%s price format"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:599, src/WOOMC/Settings/Fields.php:638
+msgctxt "Settings placeholder"
+msgid "Default"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:619
+msgid "Currency Symbols"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:620
+msgid "Change the currency symbol. Enter, for example, <code>C$</code> for Canadian Dollars."
+msgstr ""
+
+#. translators: placeholder for the currency symbol.
+#: src/WOOMC/Settings/Fields.php:634
+msgid "%s symbol"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:658
+msgid "Fixed Rates"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:659
+msgid "Enter the exchange rate of each currency relative to the US Dollar."
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:703
+msgid "Price Conversion Settings"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:707
+msgid "Fine-tune the prices after currency conversion."
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:709
+msgid "Example"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:711
+msgid "product price"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:713
+msgid "price after conversion"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:714
+msgid "change the values below to recalculate"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:732
+msgid "Add a conversion fee (%)"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:737
+msgid "Enter 2.5 to increase the converted price by 2.5%"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:743
+msgid "Round up to"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:748
+msgid "Enter 10 to round 123.45 to 130"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:754
+msgid "Price charm"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:759
+msgid "Enter 0.01 to show 50 as 49.99"
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:781
+msgid "Saving changes is not permitted."
+msgstr ""
+
+#: src/WOOMC/Settings/Fields.php:809
+msgid "To use this option, you need to install and activate one of the supported multilingual plugins:"
+msgstr ""
+
+#: src/WOOMC/Settings/Panel.php:79
+msgctxt "Settings tab title"
+msgid "Multi-currency"
+msgstr ""
+
+#: src/WOOMC/User/Profile.php:160
+msgid "Preferred Currency"
+msgstr ""
+
+#: src/WOOMC/User/Profile.php:161
+msgid "Currency to set active upon login"
+msgstr ""
+
+#: woocommerce-multicurrency.php:4
+msgid "https://woocommerce.com/products/multi-currency/"
+msgstr ""
+
+#: woocommerce-multicurrency.php:5
+msgid "Multi-currency support for WooCommerce"
+msgstr ""
+
+#: woocommerce-multicurrency.php:7
+msgid "TIV.NET INC"
+msgstr ""
+
+#: woocommerce-multicurrency.php:8
+msgid "https://profiles.wordpress.org/tivnetinc/"
+msgstr ""
+
+#: wp-super-cache/plugins/woocommerce-multicurrency.php:37
+msgid "Provides support for multiple currencies in WooCommerce store by making different cache snapshots for different currencies."
+msgstr ""

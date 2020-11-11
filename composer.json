@@ -1,0 +1,9 @@
+{
+  "name": "mdhrepos/multicurr",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "description": "Woocommerce Multicurrency WordPress plugin mirror for composer installation",
+  "keywords": [
+      "wordpress"
+  ]
+}

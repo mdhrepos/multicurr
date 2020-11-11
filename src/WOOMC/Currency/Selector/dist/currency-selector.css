@@ -1,0 +1,4 @@
+.woocommerce-currency-selector-dropdown{display:none;position:absolute}.woocommerce-currency-selector-dropdown .ui-menu{list-style:none;padding:0;margin:0}.woocommerce-currency-selector-dropdown .ui-menu .ui-menu-item{background-color:white;cursor:default;color:#444;position:relative}.woocommerce-currency-selector-dropdown .ui-menu .ui-menu-item.ui-state-focus{background-color:#444;color:white}.woocommerce-currency-selector-dropdown.ui-selectmenu-open{border:1px solid #eeeeee;display:block;z-index:999}.woocommerce-currency-selector-wrap .ui-widget{border:1px solid #eeeeee;background-color:white;color:black;cursor:default;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.woocommerce-currency-selector-wrap .currency-flag,.woocommerce-currency-selector-option .currency-flag{margin:5px 5px -3px 5px;border:1px solid #eeeeee}
+
+
+/*# sourceMappingURL=currency-selector.css.map*/
